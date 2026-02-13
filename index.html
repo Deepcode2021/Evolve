@@ -13,7 +13,7 @@
 </head>
 <body>
     <canvas id="c"></canvas>
-    <ul class="nav">
+    <ul class="nav" id="topnav">
         <li>
             <a href="#">Home</a>
         </li>
@@ -30,11 +30,14 @@
         </li>
         <li>
             <a href="#">FAQ</a>
-        </li>                                                               
+        </li>   
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </ul>
     <div class="line"></div>
     <div class="middle">
-        <h1 class="head" class="animate__fadeInDown">The Next Chapter of <span class="vidyut">Vidyut'25</span> </h1>
+        <h1 class="head" class="animate__fadeInDown">The Next Chapter of <span class="vidyut">Vidyut'26</span> </h1>
         <h2 class="start">Starts Here.</h2>
         
     </div>
@@ -45,6 +48,16 @@
     <div class="about">
         <h1>EVENT</h1>
     </div>
+    <script>
+        function myFunction() {
+                var x = document.getElementById("topnav");
+                if (x.className === "nav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "nav";
+                }
+            }
+    </script>
 </body>
 <script src="script.js"></script>
 </html>
